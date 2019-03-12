@@ -1,0 +1,72 @@
+/*Diseño de la recubierta de la calculadora*/
+.caja{
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    border: solid 1px black;
+    padding-bottom: 10px;
+    background: #04FFEA;
+    border-radius: 1em;
+}
+
+h2{
+    margin: 8px;
+}
+
+/*Caja donde se muestran los numeros*/
+.texto{
+    width: 89%;
+    margin: 5%;
+    color: red;
+    background: black;
+}
+
+input[type=textfield] {
+    width: 85%;
+    padding: 10px;
+    margin: 0px 20px 20px 20px;
+    font-size: 20px;
+    text-align: right;
+    border-radius: 1em;
+}
+
+/*Botones de la calculadora*/
+.botones{
+    width: 100%;
+}
+
+input[type=button]{
+    border-radius: 1em;
+    height: 15%;
+    width: 15%;
+    margin: 0.5%;
+}
+
+/*Boton de limpiar y igual*/
+input[type=reset],input[class=igual]{ 
+    border-radius: 1em;
+    margin-top: 0.5%;
+    height: 15%;
+    width: 38%;
+    margin: 2%;
+}
+
+/*Historial*/
+h1{
+    width: 100%;
+    max-width: 650px;
+    text-align: center;
+}
+#tabla{
+    width: 100%;
+    max-width: 650px;
+    text-align: center;
+    background: white;
+}
+
+#tabla th{
+    color: white;
+    background: black;
+    font-size: 20px;
+    margin-bottom: 10px;
+}

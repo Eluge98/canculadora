@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="diseno.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <title>Calculadora</title>
+    <script type="text/javascript" src="funciones.js"></script>
+</head>
+<body>
+    <section class="caja">
+        <h2>Calculadora:</h2>
+        <form name="calculadora">
+            <input class="texto" type="textfield" name="valor" value="0.">
+            <br>
+            <div class="botones">
+                <input type="button" id="1" value="1" onClick="botones('1')">
+                <input type="button" id="2" value="2" onClick="botones('2')">
+                <input type="button" id="3" value="3" onClick="botones('3')">
+                <input type="button" id="+" value="+" onClick="cuentas('+')">
+                <input type="button" id="-" value="-" onClick="cuentas('-')">
+                <br>
+                <input type="button" id="4" value="4" onClick="botones('4')">
+                <input type="button" id="5" value="5" onClick="botones('5')">
+                <input type="button" id="6" value="6" onClick="botones('6')">
+                <input type="button" id="x" value="x" onClick="cuentas('*')">
+                <input type="button" id="/" value="/" onClick="cuentas('/')">
+                <br>
+                <input type="button" id="7" value="7" onClick="botones('7')">
+                <input type="button" id="8" value="8" onClick="botones('8')">
+                <input type="button" id="9" value="9" onClick="botones('9')">
+                <input type="button" id="0" value="0" onClick="botones('0')">
+                <input type="button" id="." value="." onClick="decimal('.')">
+                <br>
+                <input type="reset" value="C" onClick="borrar()">
+                <input type="button" class="igual" value="=" onClick="resultado()">
+            </div>
+        </form>
+    </section>
+    
+    <section class="historial">
+        <h1>HISTORIAL:</h1>
+        <table id="tabla">
+            <tr>
+                <th>Cuenta:</th>
+                <th>Resultado:</th>
+            </tr>
+            
+        </table>
+    </section>
+
+</body>
+</html>
